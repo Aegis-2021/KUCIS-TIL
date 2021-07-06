@@ -21,7 +21,7 @@ KUCIS 팀의 TIL Repository 입니다.
 3. 새로운 브랜치 생성하기
 
    ```bash
-   git checkout -b til/{Github 닉네임}  # git checkout -b til/himitery
+   git checkout -b {Github 닉네임}  # git checkout -b himitery
    ```
 
 ### ⚙️ TIL 작성하기
@@ -40,7 +40,7 @@ KUCIS 팀의 TIL Repository 입니다.
 
    ```bash
    git commit -m "{이름}"  # git commit -m "이학진"
-   git push origin til/{Github 닉네임}  # git push origin til/himitery
+   git push origin {Github 닉네임}  # git push origin himitery
    ```
 
 5. Github에서 PULL REQUEST를 작성합니다.
