@@ -3,12 +3,6 @@
 
 COMMIT_MESSAGE_FILE=$1
 ORIGIN_COMMIT_MESSAGE=`cat $COMMIT_MESSAGE_FILE`
-ORIGIN_COMMIT_MESSAGE_LEN=`echo ${#ORIGIN_COMMIT_MESSAGE}`
-
-if [ ${ORIGIN_COMMIT_MESSAGE_LEN} -ne 3 ]; then
-    echo "Aegis > You should write your name in the commit message."
-    exit -1
-fi
 
 TODAY=`date +"%y-%m-%d"`
 NEW_COMMIT_MESSAGE=`echo ${ORIGIN_COMMIT_MESSAGE}\($TODAY\)`
