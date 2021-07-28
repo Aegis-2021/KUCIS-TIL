@@ -15,21 +15,21 @@
 
 이를 뉴런 단위로 표현하면 아래 그림과 같다.
 
-![Recurrent%20Neural%20Network%20(RNN)%207a7c9f370f254b30bfb3ce013a415e13/Untitled.png](Recurrent%20Neural%20Network%20(RNN)%207a7c9f370f254b30bfb3ce013a415e13/Untitled.png)
+![Recurrent%20Neural%20Network%20(RNN)%207a7c9f370f254b30bfb3ce013a415e13/Untitled.png](https://github.com/Aegis-2021/KUCIS-TIL/blob/lwamuhaji/TIL/%ED%97%88%EC%A4%80%EC%84%9C/images/Recurrent%20Neural%20Network%20(RNN)%207a7c9f370f254b30bfb3ce013a415e13/Untitled.png)
 
 # 3. 아키텍처
 
-![Recurrent%20Neural%20Network%20(RNN)%207a7c9f370f254b30bfb3ce013a415e13/Untitled%201.png](Recurrent%20Neural%20Network%20(RNN)%207a7c9f370f254b30bfb3ce013a415e13/Untitled%201.png)
+![Recurrent%20Neural%20Network%20(RNN)%207a7c9f370f254b30bfb3ce013a415e13/Untitled%201.png](https://github.com/Aegis-2021/KUCIS-TIL/blob/lwamuhaji/TIL/%ED%97%88%EC%A4%80%EC%84%9C/images/Recurrent%20Neural%20Network%20(RNN)%207a7c9f370f254b30bfb3ce013a415e13/Untitled%201.png)
 
 RNN의 기본적인 아키텍처이다. 중요한 것은 RNN 아키텍처에서는 뉴런 단위가 잘 쓰이지 않는다는 것이다. 따라서 위의 그림에서 각 사각형은 뉴런이 아니라 벡터를 의미한다. 또한 왼쪽에서 오른쪽으로 진행될수록 시간도 같이 진행된다는 사실을 기억해야한다.
 
-![Recurrent%20Neural%20Network%20(RNN)%207a7c9f370f254b30bfb3ce013a415e13/Untitled%202.png](Recurrent%20Neural%20Network%20(RNN)%207a7c9f370f254b30bfb3ce013a415e13/Untitled%202.png)
+![Recurrent%20Neural%20Network%20(RNN)%207a7c9f370f254b30bfb3ce013a415e13/Untitled%202.png](https://github.com/Aegis-2021/KUCIS-TIL/blob/lwamuhaji/TIL/%ED%97%88%EC%A4%80%EC%84%9C/images/Recurrent%20Neural%20Network%20(RNN)%207a7c9f370f254b30bfb3ce013a415e13https://github.com/Aegis-2021/KUCIS-TIL/blob/lwamuhaji/TIL/%ED%97%88%EC%A4%80%EC%84%9C/images/Recurrent%20Neural%20Network%20(RNN)%207a7c9f370f254b30bfb3ce013a415e13/Untitled%202.png)
 
 $입력벡터  \space x_t에 \space 대한 \space 가중치 \space  W_x \space 와 \space 은닉상태 \space h_{t-1}에 \space 대한  \space 가중치 \space W_h에 \space 대해 \space h_t=tanh(W_xx_t+W_hh_{t-1}+b) \space 이고  \space y_t=f(W_yh_t+b) \space 이다. \space (f는 \space 비선형 \space 활성화 \space 함수)$
 
 $h_t$의 계산을 도식화하면 다음과 같다.
 
-![Recurrent%20Neural%20Network%20(RNN)%207a7c9f370f254b30bfb3ce013a415e13/Untitled%203.png](Recurrent%20Neural%20Network%20(RNN)%207a7c9f370f254b30bfb3ce013a415e13/Untitled%203.png)
+![Recurrent%20Neural%20Network%20(RNN)%207a7c9f370f254b30bfb3ce013a415e13/Untitled%203.png](https://github.com/Aegis-2021/KUCIS-TIL/blob/lwamuhaji/TIL/%ED%97%88%EC%A4%80%EC%84%9C/images/Recurrent%20Neural%20Network%20(RNN)%207a7c9f370f254b30bfb3ce013a415e13/Untitled%203.png)
 
 은닉상태를 계산하기 위한 활성화 함수로는 보통 tanh가 쓰인다.
 
