@@ -3,7 +3,7 @@
 수정날짜: 2021년 7월 28일 오후 1:53
 작성날짜: 2021년 7월 26일 오후 10:04
 
-![Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled.png](https://github.com/Aegis-2021/KUCIS-TIL/blob/lwamuhaji/TIL/%ED%97%88%EC%A4%80%EC%84%9C/images/Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled.png))
+![Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled.png](https://github.com/Aegis-2021/KUCIS-TIL/blob/lwamuhaji/TIL/%ED%97%88%EC%A4%80%EC%84%9C/images/Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled.png)
 
 위 그림과 같이 CNN은 Convolution layer와 Pooling layer로 구성된다.
 
