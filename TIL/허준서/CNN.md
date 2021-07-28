@@ -10,8 +10,7 @@
 # 1. Convolution layer
 
 합성곱층에서는 합성곱 연산을 통해 이미지의 공간적 특징을 보존하면서 특성을 추출한다.
-![https://github.com/Aegis-2021/KUCIS-TIL/blob/lwamuhaji/TIL/%ED%97%88%EC%A4%80%EC%84%9C/images/Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled
-![Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%201.png](https://github.com/Aegis-2021/KUCIS-TIL/blob/lwamuhaji/TIL/%ED%97%88%EC%A4%80%EC%84%9C/images/Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled.png)
+![Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%201.png](https://github.com/Aegis-2021/KUCIS-TIL/blob/lwamuhaji/TIL/%ED%97%88%EC%A4%80%EC%84%9C/images/Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%201.png)
 
 합성곱 연산은 위와 같이 입력 데이터 위에 커널을 올려두고, 커널과 입력의 곱들을 합함으로써 수행된다.
 
