@@ -3,43 +3,43 @@
 수정날짜: 2021년 7월 28일 오후 1:53
 작성날짜: 2021년 7월 26일 오후 10:04
 
-![Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled.png](Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled.png)
+![Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled.png](https://github.com/Aegis-2021/KUCIS-TIL/blob/lwamuhaji/TIL/%ED%97%88%EC%A4%80%EC%84%9C/images/Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled.png)
 
 위 그림과 같이 CNN은 Convolution layer와 Pooling layer로 구성된다.
 
 # 1. Convolution layer
 
 합성곱층에서는 합성곱 연산을 통해 이미지의 공간적 특징을 보존하면서 특성을 추출한다.
-
-![Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%201.png](Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%201.png)
+https://github.com/Aegis-2021/KUCIS-TIL/blob/lwamuhaji/TIL/%ED%97%88%EC%A4%80%EC%84%9C/images/Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled
+![Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%201.png](https://github.com/Aegis-2021/KUCIS-TIL/blob/lwamuhaji/TIL/%ED%97%88%EC%A4%80%EC%84%9C/images/Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%201.png)
 
 합성곱 연산은 위와 같이 입력 데이터 위에 커널을 올려두고, 커널과 입력의 곱들을 합함으로써 수행된다.
 
-![Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%202.png](Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%202.png)
+![Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%202.png](https://github.com/Aegis-2021/KUCIS-TIL/blob/lwamuhaji/TIL/%ED%97%88%EC%A4%80%EC%84%9C/images/Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%202.png)
 
 이런 과정을 통해 나온 결과를 특성 맵(feature map)이라고 하며, 특성 맵은 커널과 스트라이드(stride)에 의해 결정된다. 
 
-![Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%203.png](Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%203.png)
+![Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%203.png](https://github.com/Aegis-2021/KUCIS-TIL/blob/lwamuhaji/TIL/%ED%97%88%EC%A4%80%EC%84%9C/images/Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%203.png)
 
 입력 이미지의 크기는 5x5 였지만 특성 맵의 크기는 3x3으로 작아졌다. 만약 입력의 크기를 그대로 유지하고 싶은 경우 패딩을 추가할 수 있다.
 
-![Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%204.png](Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%204.png)
+![Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%204.png](https://github.com/Aegis-2021/KUCIS-TIL/blob/lwamuhaji/TIL/%ED%97%88%EC%A4%80%EC%84%9C/images/Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%204.png)
 
-![Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%205.png](Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%205.png)
+![Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%205.png](https://github.com/Aegis-2021/KUCIS-TIL/blob/lwamuhaji/TIL/%ED%97%88%EC%A4%80%EC%84%9C/images/Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%205.png)
 
 위의 두 그림은 다층 퍼셉트론을 사용한 경우와 CNN을 사용한 경우 인공 신경망에서 어떤 식으로 작동하는지 표현한 것이다.
 
 다층 퍼셉트론을 사용하는 경우 9x4 크기의 가중치 행렬이 필요하지만 합성곱 연산을 사용하는 경우 커널의 크기인 2x2 크기의 가중치 행렬이 사용되었다.
 
-![Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%206.png](Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%206.png)
+![Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%206.png](https://github.com/Aegis-2021/KUCIS-TIL/blob/lwamuhaji/TIL/%ED%97%88%EC%A4%80%EC%84%9C/images/Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%206.png)
 
 데이터의 채널이 여러 개인 경우 커널의 채널도 데이터의 채널 수와 같게 해야한다.
 
-![Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%207.png](Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%207.png)
+![Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%207.png](https://github.com/Aegis-2021/KUCIS-TIL/blob/lwamuhaji/TIL/%ED%97%88%EC%A4%80%EC%84%9C/images/Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%207.png)
 
 이때 커널은 여러 개가 되는게 아니라, 여러 개의 채널을 가진 하나의 커널이 된다.
 
-![Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%208.png](Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%208.png)
+![Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%208.png](https://github.com/Aegis-2021/KUCIS-TIL/blob/lwamuhaji/TIL/%ED%97%88%EC%A4%80%EC%84%9C/images/Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%208.png)
 
 하지만 여러 개의 커널을 쓸 수도 있는데 이런 경우 특성 맵은 커널의 수와 같은 수의 채널을 갖는다.
 
@@ -47,7 +47,7 @@
 
 합성곱 층에서 합성곱 연산, 활성화 함수 연산을 하고 난 뒤 보통 풀링층을 지나게 된다. 풀링층에서는 풀링 연산이 이루어지는데 일반적으로 max pooling과 average pooling으로 나뉜다.
 
-![Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%209.png](Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%209.png)
+![Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%209.png](https://github.com/Aegis-2021/KUCIS-TIL/blob/lwamuhaji/TIL/%ED%97%88%EC%A4%80%EC%84%9C/images/Convolutional%20Neural%20Network%20(CNN)%205ccf3966974840bca58385c05ddf96db/Untitled%209.png)
 
 위 그림은 스트라이드가 2이고 크기가 2x2인 커널로 max pooling 연산을 하는 과정을 보여준다. 풀링 연산을 통해 특성 맵의 크기를 줄임으로써 가중치의 개수를 줄일 수 있다.
 
